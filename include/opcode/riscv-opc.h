@@ -2435,6 +2435,7 @@
 #define MATCH_XVSLIDE1UPVX  0x3800605b
 #define MASK_XVSLIDE1UPVX  0xfc007fff
 #define MATCH_XVSLIDE1DOWNVX  0x3c00605b
+#define MASK_XVSLIDE1DOWNVX  0xfc007fff
 /* Unprivileged Counter/Timers CSR addresses.  */
 #define CSR_CYCLE 0xc00
 #define CSR_TIME 0xc01
