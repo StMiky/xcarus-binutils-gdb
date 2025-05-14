@@ -1920,8 +1920,8 @@ const struct riscv_opcode riscv_insn_types[] =
 {"xvslidedown.vi",  0, INSN_CLASS_V,  "t,ViVm", MATCH_XVSLIDEDOWN_VI,  MASK_XVSLIDEDOWN_VI,   match_opcode, 0 },
 {"xvslide1up.vx",   0, INSN_CLASS_V,  "t,sVm",  MATCH_XVSLIDE1UP_VX,   MASK_XVSLIDE1UP_VX,    match_opcode, 0 },
 {"xvslide1down.vx", 0, INSN_CLASS_V,  "t,sVm",  MATCH_XVSLIDE1DOWN_VX, MASK_XVSLIDE1DOWN_VX,  match_opcode, 0 },
-{"vmulf.vv",        0, INSN_CLASS_V,  "Vd,Vs,VtVm", MATCH_VMACC_VV, MASK_VMACC_VV, match_opcode, 0},
-{"vmulf.vx",        0, INSN_CLASS_V,  "Vd,s,VtVm", MATCH_VMACC_VX, MASK_VMACC_VX, match_opcode, 0},
+{"vmulf.vv",        0, INSN_CLASS_V,  "Vd,Vs,VtVm", MATCH_VMULF_VV, MASK_VMULF_VV, match_opcode, 0},
+{"vmulf.vx",        0, INSN_CLASS_V,  "Vd,s,VtVm", MATCH_VMULF_VX, MASK_VMULF_VX, match_opcode, 0},
 {"vsmacc.vv",       0, INSN_CLASS_V,  "Vd,Vs,VtVm", MATCH_VSMACC_VV, MASK_VSMACC_VV, match_opcode, 0},
 {"vsmacc.vx",       0, INSN_CLASS_V,  "Vd,s,VtVm", MATCH_VSMACC_VX, MASK_VSMACC_VX, match_opcode, 0},
 {"vamacc.vv",       0, INSN_CLASS_V,  "Vd,Vs,VtVm", MATCH_VAMACC_VV, MASK_VAMACC_VV, match_opcode, 0},
@@ -1932,8 +1932,8 @@ const struct riscv_opcode riscv_insn_types[] =
 {"xvaadd.vx",       0, INSN_CLASS_V,  "t,sVm",  MATCH_XVAADD_VX,        MASK_XVAADD_VX,         match_opcode, 0 },
 {"xvasub.vv",        0, INSN_CLASS_V,  "tVm",    MATCH_XVASUB_VV,        MASK_XVASUB_VV,         match_opcode, 0 },
 {"xvasub.vx",        0, INSN_CLASS_V,  "t,sVm",  MATCH_XVASUB_VX,        MASK_XVASUB_VX,         match_opcode, 0 },
-{"xvhmul.vv",        0, INSN_CLASS_V,  "tVm",    MATCH_XVHMUL_VV,        MASK_XVHMUL_VV,         match_opcode, 0 },
-{"xvhmul.vx",        0, INSN_CLASS_V,  "t,sVm",  MATCH_XVHMUL_VX,        MASK_XVHMUL_VX,         match_opcode, 0 },
+{"xvmulh.vv",        0, INSN_CLASS_V,  "tVm",    MATCH_XVMULH_VV,        MASK_XVMULH_VV,         match_opcode, 0 },
+{"xvmulh.vx",        0, INSN_CLASS_V,  "t,sVm",  MATCH_XVMULH_VX,        MASK_XVMULH_VX,         match_opcode, 0 },
 {"xvsadd.vv",        0, INSN_CLASS_V,  "tVm",    MATCH_XVSADD_VV,        MASK_XVSADD_VV,         match_opcode, 0 },
 {"xvsadd.vx",        0, INSN_CLASS_V,  "t,sVm",  MATCH_XVSADD_VX,        MASK_XVSADD_VX,         match_opcode, 0 },
 {"xvsadd.vi",        0, INSN_CLASS_V,  "t,ViVm",    MATCH_XVSADD_VI,        MASK_XVSADD_VI,         match_opcode, 0 },
@@ -1948,7 +1948,7 @@ const struct riscv_opcode riscv_insn_types[] =
 {"xvhmacc.vv",        0, INSN_CLASS_V,  "tVm",    MATCH_XVHMACC_VV,        MASK_XVHMACC_VV,         match_opcode, 0 },
 {"xvhmacc.vx",        0, INSN_CLASS_V,  "t,sVm",  MATCH_XVHMACC_VX,        MASK_XVHMACC_VX,         match_opcode, 0 },
 {"xvsmul.vv",        0, INSN_CLASS_V,  "tVm",    MATCH_XVSMUL_VV,        MASK_XVSMUL_VV,         match_opcode, 0 },
-{"xvsmul.vx",        0, INSN_CLASS_V,  "t,sVm",  MATCH_XVSMUL_VX,        MASK_XVSMUF_VX,         match_opcode, 0 },
+{"xvsmul.vx",        0, INSN_CLASS_V,  "t,sVm",  MATCH_XVSMUL_VX,        MASK_XVSMUL_VX,         match_opcode, 0 },
 
 /* Terminate the list.  */
 {0, 0, INSN_CLASS_NONE, 0, 0, 0, 0, 0}
